@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+      <title>
+           JS Exercise
+      </title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+        <link rel="stylesheet" href="font-awesome-4.7.0\css\font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="stylenew.css">
+        <script type="text/javascript" src="JSminichallenge.js"></script>
+        <script src="http://s.codepen.io/assets/libs/prefixfree.min.js"></script>
+        <script src="http://code.jquery.com/jquery-latest.js"></script>
+	</head>
+	<body>
+        <div class="container">
+            <div class="header">
+                <h1>Java Script Mini Challenge</h1>
+            </div>    
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-xs-12 ">
+                    <div class="inputdiv">
+                        <div class="backslash">
+                            <h4>Objective 1</h4>
+                        </div>
+                        <input id="txt_nbr1" type="text" placeholder="Enter Number 1">
+                        <input id="txt_nbr2" type="text" placeholder="Enter Number 2">
+                        <button onclick="addnumbers();">Add Numbers</button>
+                        <button onclick="addstrings();">Add Strings</button>
+                        <label id="lbl_objective1"></label>
+                    </div>
+                </div>
+              
+                <div class="col-lg-3 col-md-3 col-xs-12 ">
+                    <div class="inputdiv">
+                        <div class="backslash">
+                            <h4>Objective 2</h4>
+                        </div>
+                        <button onclick="multiarray();">Display Array in Console</button>
+                    </div>
+                </div>
+            
+                <div class="col-lg-3 col-md-3 col-xs-12 ">
+                    <div class="inputdiv">
+                        <div class="backslash">
+                            <h4>Objecective 3</h4>
+                        </div>
+                      <button onclick="evalnumber();">Evaluate Number</button>
+                    </div>
+                </div> 
+            
+
+              
+                <div class="col-lg-3 col-md-3 col-xs-12 ">
+                    <div class="inputdiv">
+                        <div class="backslash">
+                                <h4>Objective 4</h4>
+                        </div>
+                        <input id="txt_string" type="text" placeholder="Enter Name">
+                        <button onclick="getString();">Display Name</button>
+                    </div>
+                </div>
+            </div>      
+
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-xs-12">
+                    <div class="inputdiv">
+                        <div class="backslash">
+                            <h4>Objective 5</h4>
+                        </div>  
+                        <div class="row1">     
+                            <div class="doorContainer">
+                                <div  id="door1"  class="doorClose" onclick="openDoor1();">
+                                </div>
+                                <div class="gift">
+                                    <label  id="door1gift"></label>
+                                        <div  class="door1giftimage">
+                                             <img id="giftimage" >
+                                        </div>
+                                </div>
+                            </div>
+                    
+                            <div class="doorContainer">
+                                <div id="door2" class="doorClose" onclick="openDoor2();" >
+                                </div>
+                                <div class="gift">
+                                    <label id="door2gift"></label>
+                                    <div  class="door2giftimage">
+                                             <img id="giftimage2" >
+                                        </div>
+                                </div>
+                            </div>
+
+                            <div class="doorContainer">
+                                <div id="door3" class="doorClose"  onclick="openDoor3();">
+                                </div>
+                                <div class="gift">
+                                    <label id="door3gift"></label>
+                                    <div  class="door3giftimage">
+                                             <img id="giftimage3" >
+                                        </div>
+                                </div>
+                            </div> 
+                        </div>    
+                    </div>
+                </div>    
+            </div>
+        </div>
+	</body>
+</html>
