@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Java Mini Challenge</title>
+          <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link type="text/Javascript" src="script/minichallenge.js">
+        <script>
+
+    
+        function openDoor1()
+            {
+           var x = document.getElementById("door1").className;
+            if( x == "doorClose"){
+                console.log(x);
+                document.getElementById("door1").className = "doorOpen";
+                var gift1 = parseInt((Math.random() * (10 - 1) + 1 ));
+                if (gift1 > 6 && gift1 <11){
+                    door1gift.innerText = "You Won Car";
+                }
+                else if(gift1 > 3 && gift1 <6 ){
+                    door1gift.innerText = "You Won truck";
+                }
+                else{
+                    door1gift.innerText = "You Won Bus";
+                }
+                /*var y  = document.getElementById("door1").className;
+                console.log(y);*/
+            }
+            else{
+                //console.log("Ravi");
+                var y  = "doorClose";
+                document.getElementById("door1").className = "doorClose";
+                console.log(y);   
+               }
+            }
+
+
+          function openDoor2(){
+            var x = document.getElementById("door2").className;
+            if( x == "doorClose"){
+                console.log(x);
+                document.getElementById("door2").className = "doorOpen";
+                var gift2 = parseInt((Math.random() * (10 - 1) + 1 ));
+                if (gift2 > 6 && gift2 <11){
+                    door2gift.innerText = "You Won Car";
+                    door2gift
+                }
+                else if(gift2 > 3 && gift2 <6){
+                    door2gift.innerText = "You Won truck";
+                }
+                else{
+                    door2gift.innerText = "You Won Bus";
+                }
+
+
+                /*var y  = document.getElementById("door1").className;
+                console.log(y);*/
+            }
+            else{
+                var y  = "doorClose";
+                document.getElementById("door2").className = "doorClose";
+                console.log(y);   
+            }
+
+                      
+        }
+
+
+          function openDoor3(){
+            var x = document.getElementById("door3").className;
+            if( x == "doorClose"){
+                
+                document.getElementById("door3").className = "doorOpen";
+                     var gift3 = parseInt((Math.random() * (10 - 1) + 1 ));
+                if (gift3 > 6 && gift3 <11){
+                    door3gift.innerText = "You Won Car";
+                }
+                else if(gift3 > 3 && gift3 <6){
+                    door3gift.innerText = "You Won truck";
+                }
+                else{
+                    door3gift.innerText = "You Won Bus";
+                }
+
+
+                /*var y  = document.getElementById("door1").className;
+                console.log(y);*/
+            }
+
+            else{
+                var y  = "doorClose";
+                document.getElementById("door3").className = "doorClose";
+                console.log(y);   
+            }
+
+                /*var y  = document.getElementById("door1").className;
+                console.log(y);*/
+        }
+
+        </script>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row row1">
+                <div class="doorContainer">
+                    <div  id="door1"  class="doorClose" onclick="openDoor1();">
+                        
+                    </div>
+                    <div class="gift">
+                        <label id="door1gift">Ravi</label>
+                    </div>
+                </div>
+                
+                <div class="doorContainer">
+                    <div id="door2" class="doorClose" onclick="openDoor1();" >
+                    </div>
+                    <div class="gift">
+                        <label id="door2gift">Aiden</label>
+                    </div>
+                </div>
+
+                <div class="doorContainer">
+                    <div id="door3" class="doorClose"  onclick="openDoor1();">
+                    </div>
+                    <div class="gift">
+                        <label id="door3gift">Sonalee</label>
+                    </div>
+                </div> 
+            </div>    
+        </div>
+    </body>
+</html>
